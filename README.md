@@ -1,6 +1,6 @@
 # cluster_search
 A lightweight pHMM tool for linking hits to user supplied sequences in multiple annotate genomes.
-![Overview of cluster search workflow](./figures/map.png)
+![Overview of cluster search workflow](.map.png)
 This tool takes any number of user supplied protein multiFASTAs, aligns them, prepares a pHMM from the alignment, and applies the resulting pHMMS to annotated GenBank files. The hits are filtered for each pHMMs calculated trusted bitscore cutoff and the 10 kb context of each hit is extracted to a single GenBank output file.
 
 It was developed with the intention of linking biosynthetic gene cluster (BGC) proteins of known sequences across multiple contigs in discontiguous genome assemblies. Alternatively, it could be applied to a set of genomes to extract desired protein sequences for a phylogenetic study.
